@@ -8,7 +8,7 @@ class Timer extends React.Component{
         super()
         this.state = {
             Second : 8,
-            minute : 1,
+            minute ,
             hour : 0
         }
     }
@@ -18,7 +18,7 @@ class Timer extends React.Component{
                 this.setState({
                 Second : this.state.Second -1
                 })
-                if(this.state.Second == 0){
+                if(this.state.Second === 0){
                     this.setState({
                         minute : this.state.minute -1
                         //Second : 8
