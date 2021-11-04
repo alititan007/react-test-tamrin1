@@ -28,14 +28,14 @@ class Timer extends React.Component{
         } , 1000)
     }
     componentDidUpdate(){
-        if(this.state.minute == 0){
-            clearInterval(inter)
+        if(this.state === 0){
+            clearInterval(inter);  
         }
     }
     render(){
         return(
             <h2 className="timer">
-                it is{this.state.hour}:{this.state.minute}:{this.state.Second}
+                it is {this.state.hour}:{this.state.minute}:{this.state.Second}
             </h2>
         )
     }
